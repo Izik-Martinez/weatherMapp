@@ -34,3 +34,21 @@ path {
      transition: opacity .4s ease;
      z-index: 1;
  }
+
+ .svgFlex {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 10vh;
+ }
+
+ .title {
+     font-size: larger;
+     font-weight: 800;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 5vh;
+ }
