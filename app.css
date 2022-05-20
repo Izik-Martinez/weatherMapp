@@ -41,14 +41,18 @@ path {
      display: flex;
      justify-content: center;
      align-items: center;
-     padding-top: 10vh;
  }
 
  .title {
-     font-size: larger;
+     background-image: url("https://media.istockphoto.com/photos/blue-sky-background-with-white-clouds-picture-id1327185011?s=612x612");
+     background-repeat: repeat;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     margin-top: 80px;
+     font-size: 60px;
+     text-align: center;
+     font-weight: bold;
      font-weight: 800;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-top: 5vh;
+     -webkit-font-smoothing: antialiased;
+     padding-bottom: 0%;
  }
