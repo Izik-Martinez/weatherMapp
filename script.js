@@ -13,7 +13,7 @@
 //         switch (pathID) {
 //             case "WA": console.log(getWeather("Seattle"));
 //             break;
-//             case "CA": detailsBox.innerText = console.log((getWeather("Sacramento")));
+//             case "CA": let howCloudy = console.log((getWeather("Sacramento")));
 //             break;
 
 //         }
@@ -176,115 +176,119 @@ const getClouds = async (cityName) => {
 }
 
 
+let titleBackgroundIMG = document.querySelector(".title");
 document.addEventListener("mouseover", async (e) => {
     if (e.target.tagName == "path") {
         let pathID = e.target.id;
         switch (pathID) {
-            case "AL": detailsBox.innerText = await getClouds("Montgomery");
+            case "AL": let howCloudy = await getClouds("Montgomery");
+                            console.log(howCloudy);
             break;
-            case "AK": detailsBox.innerText = (await getClouds("Juneau"));
+            case "AK": let howCloudy1 = (await getClouds("Juneau"));
             break;
-            case "AZ": detailsBox.innerText = await getClouds("Pheonix");
+            case "AZ": let howCloudyOdd = await getClouds("Pheonix");
             break;
-            case "AR": detailsBox.innerText = (await getClouds("Little Rock"));
+            case "AR": let howCloudy2 = (await getClouds("Little Rock"));
             break;
-            case "CA": detailsBox.innerText = (await getClouds("Sacramento"));
+            case "CA": let howCloudy3 = (await getClouds("Sacramento"));
             break;
-            case "CO": detailsBox.innerText = (await getClouds("Denver"));
+            case "CO": let howCloudy4 = (await getClouds("Denver"));
             break;
-            case "CT": detailsBox.innerText = await getClouds("Hartford");
+            case "CT": let howCloudy5 = await getClouds("Hartford");
             break;
-            case "DE": detailsBox.innerText = (await getClouds("Dover"));
+            case "DE": let howCloudy6 = (await getClouds("Dover"));
             break;
-            case "FL": detailsBox.innerText = await getClouds("Tallahassee");
+            case "FL": let howCloudy7 = await getClouds("Tallahassee");
+                        if (howCloudy7.all < 60) {
+                            titleBackgroundIMG.style.backroundImage = "url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nextbiography.com%2Fsquilliam-fancyson%2F&psig=AOvVaw2wpgBWRsEvEsE1ROJ19IJc&ust=1653256916276000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCLCC5YvM8fcCFQAAAAAdAAAAABAD)"
+                        }; 
+            case "GA": let howCloudy8 = (await getClouds("Atlanta"));
             break;
-            case "GA": detailsBox.innerText = (await getClouds("Atlanta"));
+            case "HI": let howCloudy9 = await getClouds("Honolulu");
             break;
-            case "HI": detailsBox.innerText = await getClouds("Honolulu");
+            case "ID": let howCloudy10 = (await getClouds("Boise"));
             break;
-            case "ID": detailsBox.innerText = (await getClouds("Boise"));
+            case "IL": let howCloudy11 = await getClouds("Springfield");
             break;
-            case "IL": detailsBox.innerText = await getClouds("Springfield");
+            case "IN": let howCloudy12 = (await getClouds("Indianapolis"));
             break;
-            case "IN": detailsBox.innerText = (await getClouds("Indianapolis"));
+            case "IA": let howCloudy13 = await getClouds("Des Moines");
             break;
-            case "IA": detailsBox.innerText = await getClouds("Des Moines");
+            case "KS": let howCloudy14 = (await getClouds("Topeka"));
             break;
-            case "KS": detailsBox.innerText = (await getClouds("Topeka"));
+            case "KY": let howCloudy15 = await getClouds("Frankfort");
             break;
-            case "KY": detailsBox.innerText = await getClouds("Frankfort");
+            case "LA": let howCloudy16 = (await getClouds("Baton Rouge"));
             break;
-            case "LA": detailsBox.innerText = (await getClouds("Baton Rouge"));
+            case "ME": let howCloudy17 = await getClouds("Augusta");
             break;
-            case "ME": detailsBox.innerText = await getClouds("Augusta");
+            case "MD": let howCloudy18 = (await getClouds("Annapolis"));
             break;
-            case "MD": detailsBox.innerText = (await getClouds("Annapolis"));
+            case "MI": let howCloudy19 = await getClouds("Lansing");
             break;
-            case "MI": detailsBox.innerText = await getClouds("Lansing");
+            case "MN": let howCloudy20 = (await getClouds("Saint Paul"));
             break;
-            case "MN": detailsBox.innerText = (await getClouds("Saint Paul"));
+            case "MS": let howCloudy21 = await getClouds("Jackson");
             break;
-            case "MS": detailsBox.innerText = await getClouds("Jackson");
+            case "MO": let howCloudy22 = (await getClouds("Jefferson City"));
             break;
-            case "MO": detailsBox.innerText = (await getClouds("Jefferson City"));
+            case "MT": let howCloudy23 = await getClouds("Helena");
             break;
-            case "MT": detailsBox.innerText = await getClouds("Helena");
+            case "NE": let howCloudy24 = (await getClouds("Lincoln"));
             break;
-            case "NE": detailsBox.innerText = (await getClouds("Lincoln"));
+            case "NV": let howCloudy25 = await getClouds("Carson City");
             break;
-            case "NV": detailsBox.innerText = await getClouds("Carson City");
+            case "NH": let howCloudy26 = (await getClouds("Concord"));
             break;
-            case "NH": detailsBox.innerText = (await getClouds("Concord"));
+            case "NJ": let howCloudy27 = await getClouds("Trenton");
             break;
-            case "NJ": detailsBox.innerText = await getClouds("Trenton");
+            case "NM": let howCloudy28 = (await getClouds("Santa Fe"));
             break;
-            case "NM": detailsBox.innerText = (await getClouds("Santa Fe"));
+            case "NY": let howCloudy29 = await getClouds("Albany");
             break;
-            case "NY": detailsBox.innerText = await getClouds("Albany");
+            case "NC": let howCloudy30 = (await getClouds("Raleigh"));
             break;
-            case "NC": detailsBox.innerText = (await getClouds("Raleigh"));
+            case "ND": let howCloudy31 = await getClouds("Bismarck");
             break;
-            case "ND": detailsBox.innerText = await getClouds("Bismarck");
+            case "OH": let howCloudy32 = (await getClouds("Columbus"));
             break;
-            case "OH": detailsBox.innerText = (await getClouds("Columbus"));
+            case "OK": let howCloudy33 = await getClouds("Oklahoma City");
             break;
-            case "OK": detailsBox.innerText = await getClouds("Oklahoma City");
+            case "OR": let howCloudy34 = (await getClouds("Salem"));
             break;
-            case "OR": detailsBox.innerText = (await getClouds("Salem"));
+            case "PA": let howCloudy35 = await getClouds("Harrisburg");
             break;
-            case "PA": detailsBox.innerText = await getClouds("Harrisburg");
+            case "RI": let howCloudy36 = (await getClouds("Providence"));
             break;
-            case "RI": detailsBox.innerText = (await getClouds("Providence"));
+            case "SC": let howCloudy37 = await getClouds("Columbia");
             break;
-            case "SC": detailsBox.innerText = await getClouds("Columbia");
+            case "SD": let howCloudy38 = (await getClouds("Pierre"));
             break;
-            case "SD": detailsBox.innerText = (await getClouds("Pierre"));
-            break;
-            case "TN": detailsBox.innerText = (await getClouds("Nashville"));
-            break;
-
-            case "TX": detailsBox.innerText = (await getClouds("Austin"));
-            break;
-
-            case "UT": detailsBox.innerText = (await getClouds("Salt Lake City"));
+            case "TN": let howCloudy39 = (await getClouds("Nashville"));
             break;
 
-            case "VT": detailsBox.innerText = (await getClouds("Montpelier"));
+            case "TX": let howCloudy40 = (await getClouds("Austin"));
             break;
 
-            case "VA": detailsBox.innerText = (await getClouds("Richmond"));
+            case "UT": let howCloudy41 = (await getClouds("Salt Lake City"));
             break;
 
-            case "WA": detailsBox.innerText = (await getClouds("Olympia"));
+            case "VT": let howCloudy42 = (await getClouds("Montpelier"));
             break;
 
-            case "WV": detailsBox.innerText = (await getClouds("Charleston"));
+            case "VA": let howCloudy43 = (await getClouds("Richmond"));
             break;
 
-            case "WI": detailsBox.innerText = (await getClouds("Madison"));
+            case "WA": let howCloudy44 = (await getClouds("Olympia"));
             break;
 
-            case "WY": detailsBox.innerText = (await getClouds("Cheyenne"));
+            case "WV": let howCloudy45 = (await getClouds("Charleston"));
+            break;
+
+            case "WI": let howCloudy46 = (await getClouds("Madison"));
+            break;
+
+            case "WY": let howCloudy47 = (await getClouds("Cheyenne"));
             break;
         }
         
