@@ -176,7 +176,8 @@ const getClouds = async (cityName) => {
 }
 
 
-let titleBackgroundIMG = document.querySelector(".title");
+let titleBackgroundIMG = document.body.querySelector(".title");
+console.log(titleBackgroundIMG);
 document.addEventListener("mouseover", async (e) => {
     if (e.target.tagName == "path") {
         let pathID = e.target.id;
@@ -196,13 +197,26 @@ document.addEventListener("mouseover", async (e) => {
             break;
             case "CT": let howCloudy5 = await getClouds("Hartford");
             break;
-            case "DE": let howCloudy6 = (await getClouds("Dover"));
+            case "DE": let howCloudy6 = await getClouds("Dover");
+                        if (howCloudy6.all < 60) {
+                titleBackgroundIMG.style.backroundImage = 'url("cloudy.jpg")'
+                
+            };
             break;
             case "FL": let howCloudy7 = await getClouds("Tallahassee");
+            console.log("is working");
+            titleBackgroundIMG.style.backroundImage = 'url("cloudy.jpg")';
+            titleBackgroundIMG.classList.add("testClass");
                         if (howCloudy7.all < 60) {
-                            titleBackgroundIMG.style.backroundImage = "url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nextbiography.com%2Fsquilliam-fancyson%2F&psig=AOvVaw2wpgBWRsEvEsE1ROJ19IJc&ust=1653256916276000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCLCC5YvM8fcCFQAAAAAdAAAAABAD)"
-                        }; 
-            case "GA": let howCloudy8 = (await getClouds("Atlanta"));
+                        
+                        } else if (howCloudy7.all > 60 && howCloudy7.all < 70) {
+
+                        } else if (howCloudy7.all > 70 && howCloudy7.all < 80) {
+
+                        } else if (howCloudy7.all > 80) {
+                            
+                        }
+            // case "GA": let howCloudy8 = (await getClouds("Atlanta"));
             break;
             case "HI": let howCloudy9 = await getClouds("Honolulu");
             break;
@@ -247,6 +261,9 @@ document.addEventListener("mouseover", async (e) => {
             case "NY": let howCloudy29 = await getClouds("Albany");
             break;
             case "NC": let howCloudy30 = (await getClouds("Raleigh"));
+                        if (howCloudy30.all < 60) {
+                titleBackgroundIMG.style.backroundImage = 'url("cloudy.jpg")'
+            };
             break;
             case "ND": let howCloudy31 = await getClouds("Bismarck");
             break;

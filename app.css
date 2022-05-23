@@ -56,3 +56,7 @@ path {
      -webkit-font-smoothing: antialiased;
      padding-bottom: 0%;
  }
+
+ .testClass {
+    background-image: url("test.jpg");
+ }
