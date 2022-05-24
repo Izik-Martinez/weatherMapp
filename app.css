@@ -60,3 +60,11 @@ path {
  .testClass {
     background-image: url("test.jpg");
  }
+
+ .cloudy {
+     background-image: url("cloudy.jpg");
+ }
+
+ .overcast {
+     background-image: url("overcast.jpg.jpg")
+ }

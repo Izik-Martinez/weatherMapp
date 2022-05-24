@@ -183,9 +183,26 @@ document.addEventListener("mouseover", async (e) => {
         let pathID = e.target.id;
         switch (pathID) {
             case "AL": let howCloudy = await getClouds("Montgomery");
-                            console.log(howCloudy);
+            if (howCloudy.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy.all > 60 && howCloudy.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy.all > 70 && howCloudy.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
             break;
             case "AK": let howCloudy1 = (await getClouds("Juneau"));
+            if (howCloudy1.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy1.all > 60 && howCloudy1.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy1.all > 70 && howCloudy1.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy1.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
             break;
             case "AZ": let howCloudyOdd = await getClouds("Pheonix");
             break;
@@ -205,22 +222,30 @@ document.addEventListener("mouseover", async (e) => {
             break;
             case "FL": let howCloudy7 = await getClouds("Tallahassee");
             console.log("is working");
-            titleBackgroundIMG.style.backroundImage = 'url("cloudy.jpg")';
-            titleBackgroundIMG.classList.add("testClass");
                         if (howCloudy7.all < 60) {
-                        
+                            titleBackgroundIMG.classList.add("sunny");
                         } else if (howCloudy7.all > 60 && howCloudy7.all < 70) {
-
+                            titleBackgroundIMG.classList.add("partlySunny");
                         } else if (howCloudy7.all > 70 && howCloudy7.all < 80) {
-
+                            titleBackgroundIMG.classList.add("cloudy");
                         } else if (howCloudy7.all > 80) {
-                            
+                            titleBackgroundIMG.classList.add("overcast");
                         }
             // case "GA": let howCloudy8 = (await getClouds("Atlanta"));
             break;
             case "HI": let howCloudy9 = await getClouds("Honolulu");
             break;
             case "ID": let howCloudy10 = (await getClouds("Boise"));
+            if (howCloudy10.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy10.all > 60 && howCloudy10.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy10.all > 70 && howCloudy10.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy10.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
+            
             break;
             case "IL": let howCloudy11 = await getClouds("Springfield");
             break;
@@ -261,9 +286,16 @@ document.addEventListener("mouseover", async (e) => {
             case "NY": let howCloudy29 = await getClouds("Albany");
             break;
             case "NC": let howCloudy30 = (await getClouds("Raleigh"));
-                        if (howCloudy30.all < 60) {
-                titleBackgroundIMG.style.backroundImage = 'url("cloudy.jpg")'
-            };
+            if (howCloudy30.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy30.all > 60 && howCloudy30.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy30.all > 70 && howCloudy30.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy30.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
+            
             break;
             case "ND": let howCloudy31 = await getClouds("Bismarck");
             break;
@@ -285,6 +317,15 @@ document.addEventListener("mouseover", async (e) => {
             break;
 
             case "TX": let howCloudy40 = (await getClouds("Austin"));
+            if (howCloudy40.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy40.all > 60 && howCloudy40.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy40.all > 70 && howCloudy40.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy40.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
             break;
 
             case "UT": let howCloudy41 = (await getClouds("Salt Lake City"));
@@ -294,6 +335,16 @@ document.addEventListener("mouseover", async (e) => {
             break;
 
             case "VA": let howCloudy43 = (await getClouds("Richmond"));
+            console.log(howCloudy43.all)
+            if (howCloudy43.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy43.all > 60 && howCloudy43.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy43.all > 70 && howCloudy43.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy43.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
             break;
 
             case "WA": let howCloudy44 = (await getClouds("Olympia"));
