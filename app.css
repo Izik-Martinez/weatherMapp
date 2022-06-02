@@ -64,7 +64,9 @@ path {
  .cloudy {
      background-image: url("cloudy.jpg");
  }
-
+.partlySunny {
+    background-image: url("partlySunny.jpg");
+}
  .overcast {
      background-image: url("overcast.jpg.jpg")
  }

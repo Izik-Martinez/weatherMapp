@@ -209,6 +209,15 @@ document.addEventListener("mouseover", async (e) => {
             case "AR": let howCloudy2 = (await getClouds("Little Rock"));
             break;
             case "CA": let howCloudy3 = (await getClouds("Sacramento"));
+            if (howCloudy3.all < 60) {
+                titleBackgroundIMG.classList.add("sunny");
+            } else if (howCloudy3.all > 60 && howCloudy3.all < 70) {
+                titleBackgroundIMG.classList.add("partlySunny");
+            } else if (howCloudy3.all > 70 && howCloudy3.all < 80) {
+                titleBackgroundIMG.classList.add("cloudy");
+            } else if (howCloudy3.all > 80) {
+                titleBackgroundIMG.classList.add("overcast");
+            }
             break;
             case "CO": let howCloudy4 = (await getClouds("Denver"));
             break;
@@ -237,13 +246,13 @@ document.addEventListener("mouseover", async (e) => {
             break;
             case "ID": let howCloudy10 = (await getClouds("Boise"));
             if (howCloudy10.all < 60) {
-                titleBackgroundIMG.classList.add("sunny");
+                titleBackgroundIMG.classList.toggle("sunny");
             } else if (howCloudy10.all > 60 && howCloudy10.all < 70) {
-                titleBackgroundIMG.classList.add("partlySunny");
+                titleBackgroundIMG.classList.toggle("partlySunny");
             } else if (howCloudy10.all > 70 && howCloudy10.all < 80) {
-                titleBackgroundIMG.classList.add("cloudy");
+                titleBackgroundIMG.classList.toggle("cloudy");
             } else if (howCloudy10.all > 80) {
-                titleBackgroundIMG.classList.add("overcast");
+                titleBackgroundIMG.classList.toggle("overcast");
             }
             
             break;
@@ -318,13 +327,13 @@ document.addEventListener("mouseover", async (e) => {
 
             case "TX": let howCloudy40 = (await getClouds("Austin"));
             if (howCloudy40.all < 60) {
-                titleBackgroundIMG.classList.add("sunny");
+                titleBackgroundIMG.classList.toggle("sunny");
             } else if (howCloudy40.all > 60 && howCloudy40.all < 70) {
-                titleBackgroundIMG.classList.add("partlySunny");
+                titleBackgroundIMG.classList.toggle("partlySunny");
             } else if (howCloudy40.all > 70 && howCloudy40.all < 80) {
-                titleBackgroundIMG.classList.add("cloudy");
+                titleBackgroundIMG.classList.toggle("cloudy");
             } else if (howCloudy40.all > 80) {
-                titleBackgroundIMG.classList.add("overcast");
+                titleBackgroundIMG.classList.toggle("overcast");
             }
             break;
 
