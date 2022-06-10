@@ -14,7 +14,7 @@ I utilized openweathermap's api (https://openweathermap.org/api) to retrieve acc
 
 ## Optimizations
 
-In the future I plan to change the title background images, especially "partlySunny", so that they're more interpretable. I also plan on configuring the SVG so that it's responsive for mobile devices.
+In the future I plan to change the title background images, especially "partlySunny", so that they're more interpretable. I also plan on configuring the SVG so that it's responsive for mobile devices. For ease-of-use., I could add identifiers to each state.
 
 
 ## Lessons Learned:
