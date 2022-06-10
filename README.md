@@ -2,8 +2,8 @@
 
 Capital Weather, aka weatherMapp, is a web app that allows users to interact with a United States map for weather information on capital cities. When the user mouses-over a state, the state capital's current temperature and cloud data are displayed visually. 
 
-**Link to project:** 
-![alt text](https://izik-martinez.github.io/weatherMapp/)
+[**Link to project:**](https://izik-martinez.github.io/weatherMapp/) 
+
 ![weatherMapp](https://github.com/Izik-Martinez/weatherMapp/blob/main/screenshot.jpg)
 
 ## How It's Made:
