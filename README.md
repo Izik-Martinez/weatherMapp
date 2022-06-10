@@ -10,7 +10,7 @@ Capital Weather, aka weatherMapp, is a web app that allows users to interact wit
 
 **Tech used:** HTML, CSS, JavaScript, Axios
 
-I utilized openweathermap's api (https://openweathermap.org/api) to retrieve accurate current weather data. Depending on the current cloud data of the selected capital city, the title's background image will display sunny, partly-sunny, cloudy, or overcast skies. On each mouseover of a particular state, the state capital's current temperature is displayed within a styled box. On the front end, I used CSS to style the free U.S. svg map (https://simplemaps.com/resources/svg-us) and CSS plus Javascript (JS) to style/activate the details box. I took the approach of changing the title's background image using the JS web api .classList property.    
+I utilized openweathermap's api (https://openweathermap.org/api) to retrieve accurate current weather data. Depending on the current cloud data of the selected capital city, the title's background image will display sunny, partly-sunny, cloudy, or overcast skies. On each mouseover of a particular state, the state capital's current temperature is displayed within a styled box. On the front end, I used CSS to style the free U.S. svg map (https://simplemaps.com/resources/svg-us) and CSS plus Javascript (JS) to style/activate the details box. The title's dynamic background was powered by classList (web api) and JS.    
 
 ## Optimizations
 
