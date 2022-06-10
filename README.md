@@ -4,7 +4,7 @@ Capital Weather, aka weatherMapp, is a web app that allows users to interact wit
 
 **Link to project:** 
 
-![weatherMapp](/repository/weatherMapp/screenshot.jpg)
+![weatherMapp](https://github.com/Izik-Martinez/weatherMapp/[main/screenshot.jpg?raw=true))
 
 ## How It's Made:
 
